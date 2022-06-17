@@ -1,0 +1,27 @@
+---
+- students:
+  - name: Ashok
+  - phone:355454
+  - address: 
+    - door no: 34
+    - Steet no: 3
+    - pincode: 233444
+
+  - name: Avanti
+  - phone: 6364744
+  - address: 
+    - door no: 37
+    - Steet no: 1
+    - pincode: 837444
+
+  - name: Chandu
+  - phone: 738444
+  - address: 
+    - door no: 79
+    - Steet no: 2
+    - pincode: 266644
+
+
+
+
+
