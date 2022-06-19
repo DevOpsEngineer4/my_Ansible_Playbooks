@@ -8,6 +8,6 @@
      status: present 
 
   - name: i want to start web server 
-    apt: 
+    service: 
      name: apache2 
      status: started
