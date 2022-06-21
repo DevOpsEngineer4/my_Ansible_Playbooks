@@ -18,12 +18,12 @@
 
   - name: I want to install webserver on Amazon Linux, cent os, Redhat 
     yum: 
-      name: httpd
+      name: "{{mywebpackonredhat}}"
       state: present 
     when: ansible_os_family == "RedHat"
     
   - name: I want to start RedHat web server
     service:
-        name: httpd
+        name: "{{mywebpackonredhat}}"
         state: started
     when: ansible_os_family == "RedHat"
