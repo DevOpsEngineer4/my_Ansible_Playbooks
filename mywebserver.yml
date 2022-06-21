@@ -5,14 +5,14 @@
   tasks: 
   - name: I want to install webserver on ansible ubuntu node
     apt:  
-      name: apache2
+      name: "{{mywebpackonubuntu}}"
       state: present
     when:  ansible_os_family == "Debian"
  
 
   - name: I want to start my webserver on ubuntu node
     service:
-       name: apache2
+       name: "{{mywebpackonubuntu}}"
        state: started
     when:  ansible_os_family == "Debian"
 
