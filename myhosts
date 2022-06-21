@@ -12,9 +12,11 @@
 172.31.25.2
 
 
-[my_webservers]
+[my_webservers:vars]
 myvariable= value
-mywebpackonubuntu= apache2
+mywebpackonubuntu= apache22222222222
 mywebpackonredhat= httpd
+
+
 
 
