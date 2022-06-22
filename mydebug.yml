@@ -1,0 +1,6 @@
+--- 
+- hosts: 172.31.30.15
+  become: yes 
+  tasks: 
+  - name: execute linux command on a specific node
+    command: hostname -f  
