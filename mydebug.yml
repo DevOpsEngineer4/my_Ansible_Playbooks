@@ -3,4 +3,22 @@
   become: yes 
   tasks: 
   - name: execute linux command on a specific node
-    command: hostname -f  
+    command: hostname -f 
+    register: myfirsttaskresult
+
+  
+
+  - name: i want to display above tasks result here
+    debug:
+      msg: "{{myfirsttaskresult}}"
+
+
+
+      
+
+
+
+
+
+
+
