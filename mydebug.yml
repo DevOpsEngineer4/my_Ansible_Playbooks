@@ -6,15 +6,30 @@
     command: hostname -f 
     register: myfirsttaskresult
 
-  
-
   - name: i want to display above tasks result here
     debug:
       msg: "{{myfirsttaskresult}}"
 
 
+  - name: install git 
+    apt: 
+      name: git 
+      state: present 
+    when: myfirsttaskresult.stderr ==""
+    
 
-      
+  - name: install tree 
+    apt: 
+      name: tree 
+      state: present 
+    when: myfirsttaskresult.stderr !=""
+
+
+
+
+
+
+
 
 
 
