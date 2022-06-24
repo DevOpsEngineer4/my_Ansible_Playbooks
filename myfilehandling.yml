@@ -4,6 +4,11 @@
   tasks: 
   - include_tasks: myfile.yml
 
+  - name: i want to copy file from source to destination 
+    copy: 
+      src: mystatic 
+      dest: /home/ubuntu/mystaticfile
+
   
     
 
