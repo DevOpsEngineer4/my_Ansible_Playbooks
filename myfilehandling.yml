@@ -18,12 +18,27 @@
     template: 
       src: myindexfile.j2
       dest: /var/www/html/index.html 
+    notify: restartwebserver
 
   - name: Download remote files 
     get_url: 
         url: https://avantis3bucket.s3.amazonaws.com/mahaLogin.war
         dest: /home/ubuntu/mahaLogin.war
         force_basic_auth: yes
+
+  handlers: 
+  - name: restartwebserver
+    service: 
+      name: apache2
+      state: restarted
+  
+  
+
+
+
+
+
+
 
 
 
