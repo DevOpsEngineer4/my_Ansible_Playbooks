@@ -9,6 +9,14 @@
       src: mystatic 
       dest: /home/ubuntu/mystaticfile
 
+  - name: install webserver apache2 
+    apt: 
+     name: apache2 
+     state: present 
+
+
+     
+
   
     
 
