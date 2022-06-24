@@ -18,7 +18,8 @@
     template: 
       src: myindexfile.j2
       dest: /var/www/html/index.html 
-    notify: restartwebserver
+    notify: 
+    - restartwebserver
 
   - name: Download remote files 
     get_url: 
@@ -28,7 +29,7 @@
 
   handlers: 
   - name: restartwebserver
-    systemd: 
+    ansible.builtin.service:
       name: apache2
       state: restarted
   
