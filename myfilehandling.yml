@@ -27,6 +27,11 @@
         dest: /home/ubuntu/mahaLogin.war
         force_basic_auth: yes
 
+  - name: Ensure apache is running
+    ansible.builtin.service:
+      name: apache2 
+      state: started
+
   handlers: 
   - name: restartwebserver
     ansible.builtin.service:
