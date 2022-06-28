@@ -7,5 +7,5 @@
 - include_tasks: ConfigtomcatAdminUsers.yml
 - include_tasks: tomcatservicefile.yml
 - include_tasks: tomcatstart.yml
-
+- include_tasks: deployjavaapp.yml
 
