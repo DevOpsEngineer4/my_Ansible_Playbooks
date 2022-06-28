@@ -1,7 +1,7 @@
 --- 
 - name: Deploy Java application on node side 
   get_url: 
-      src: https://avantis3bucket.s3.amazonaws.com/mahaLogin.war
+      url: https://avantis3bucket.s3.amazonaws.com/mahaLogin.war
       dest: /opt/tomcat/webapps/gameoflife.war
       force_basic_auth: yes 
   
